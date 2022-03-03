@@ -1,13 +1,59 @@
+@font-face {
+  font-family: "Cormorant";
+  src: url("./assets/fonts/cormorant.regular.otf");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Cormorant", "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: "Montserrat", source-code-pro, Menlo, Monaco, Consolas,
+    "Courier New", monospace;
+}
+
+.logo {
+  font-size: 30px;
+}
+
+.ico {
+  cursor: pointer;
+  width: 45px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+
+.mid-nav {
+  font-size: 20px;
+}
+
+.about {
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.about-desc {
+  width: 400px;
+}
+
+.about-desc-heading {
+  font-size: 5rem;
+}
+
+.about-desc-p {
+  font-size: 1.5rem;
+}
+
+.about-img {
+  width: 500px;
 }
