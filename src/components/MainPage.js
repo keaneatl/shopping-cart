@@ -1,7 +1,6 @@
 import Laptop from "../assets/about.jpeg";
-import ProductCard from "./ProductCard";
 
-const MainPage = ({ products }) => {
+const MainPage = () => {
   return (
     <div className="home">
       <div className="about">
