@@ -1,4 +1,4 @@
-import About from "./assets/about.jpeg";
+import About from "./assets/images/about.jpeg";
 
 function App() {
   return (
