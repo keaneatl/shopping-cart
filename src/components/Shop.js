@@ -1,4 +1,3 @@
-import MainPage from "./MainPage";
 import earphones from "../assets/earphones.png";
 import headset1 from "../assets/headset1.png";
 import headset2 from "../assets/headset2.png";
@@ -10,9 +9,9 @@ import phone2 from "../assets/phone2.png";
 import phone3 from "../assets/phone3.png";
 import printer1 from "../assets/printer1.png";
 import { useState } from "react";
-import ProductCard from "./ProductCard";
+import ProductCard from "./products/ProductCard";
 
-const Products = ({ cart, setCart }) => {
+const Shop = ({ cart, setCart }) => {
   const [products, setProducts] = useState([
     {
       name: "Wired In-Ear Earphones",
@@ -121,4 +120,4 @@ const Products = ({ cart, setCart }) => {
   );
 };
 
-export default Products;
+export default Shop;

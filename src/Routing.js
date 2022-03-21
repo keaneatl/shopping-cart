@@ -2,7 +2,7 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import Header from "./components/Header";
-import Products from "./components/Products";
+import Shop from "./components/Shop";
 
 const Routing = () => {
   const [cart, setCart] = useState([]);
@@ -11,10 +11,7 @@ const Routing = () => {
       <Header logo="KTECH" cartStatus={cart.length} />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route
-          path="/shop"
-          element={<Products cart={cart} setCart={setCart} />}
-        />
+        <Route path="/shop" element={<Shop cart={cart} setCart={setCart} />} />
       </Routes>
     </BrowserRouter>
   );
