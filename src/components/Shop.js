@@ -32,33 +32,7 @@ const Shop = ({ cart, setCart }) => {
     const data = Object.values(Products);
     setProducts(data);
   }, []);
-  console.log(products);
-  const onQuantityAdd = () => {};
 
-  const onQuantityRemove = () => {};
-
-  const onClick = (product, id) => {
-    setCart(
-      cart.concat({
-        name: product,
-        ID: id,
-        quantity: 0,
-      })
-    );
-    console.log(cart);
-  };
-
-  const onInput = (e) => {
-    setCart(
-      cart.map((item) => {
-        if (item.id === e.currentTarget.inputID) {
-          item.quantity = e.target.value;
-        }
-        console.log(item);
-        return item;
-      })
-    );
-  };
   return (
     <div className="products">
       {products.map((product, i) => (
@@ -68,8 +42,6 @@ const Shop = ({ cart, setCart }) => {
           src={productImages[i]}
           key={product.id}
           inputid={product.id}
-          onQuantityAdd={onQuantityAdd}
-          onQuantityRemove={onQuantityRemove}
         />
       ))}
     </div>
