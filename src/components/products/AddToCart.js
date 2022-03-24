@@ -1,22 +1,21 @@
-const AddToCart = ({ name, price, id, onInput, onClick }) => {
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+
+const AddToCart = ({ name, price, amount, onAdd, onLessen, onAddToCart }) => {
   return (
-    <span>
+    <div>
       <p className="product-name">{name}</p>
-      <p className="product-price">
-        ${price}
-        <input
-          type="number"
-          className="quantity"
-          onInput={onInput}
-          inputid={id}
-          min={0}
-          max={100}
-        ></input>
-        <button type="button" onClick={(name) => onClick}>
-          Add to Cart
-        </button>
-      </p>
-    </span>
+      <p className="product-price">${price}</p>
+      <button type="button" onAdd={onAdd}>
+        <AiOutlinePlus />
+      </button>
+      <p className="quantity">{amount}</p>
+      <button type="button" onLessen={onLessen}>
+        <AiOutlineMinus />
+      </button>
+      <button type="button" onAddToCart={(name) => onAddToCart}>
+        Add to Cart
+      </button>
+    </div>
   );
 };
 
