@@ -3,20 +3,24 @@ import AddToCart from "./AddToCart";
 const ProductCard = ({
   name,
   price,
-  src,
+  amount,
   id,
-  onQuantityAdd,
-  onQuantityReduce,
+  productImg,
+  onAdd,
+  onLessen,
+  onAddToCart,
 }) => {
   return (
     <div className="product-card">
-      <img src={src} className="product-img" alt={name} />
+      <img src={productImg} className="product-img" alt={name} />
       <AddToCart
         name={name}
         price={price}
+        amount={amount}
         id={id}
-        onQuantityAdd={onQuantityAdd}
-        onQuantityReduce={onQuantityReduce}
+        onAdd={onAdd}
+        onLessen={onLessen}
+        onAddToCart={onAddToCart}
       />
     </div>
   );

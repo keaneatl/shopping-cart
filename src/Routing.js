@@ -6,12 +6,13 @@ import Shop from "./components/Shop";
 
 const Routing = () => {
   const [cart, setCart] = useState([]);
+
   return (
     <BrowserRouter>
       <Header logo="KTECH" cartStatus={cart.length} />
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/shop" element={<Shop cart={cart} setCart={setCart} />} />
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </BrowserRouter>
   );
