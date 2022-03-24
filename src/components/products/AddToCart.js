@@ -8,7 +8,13 @@ const AddToCart = ({
   onAdd,
   onLessen,
   onAddToCart,
+  onAmountInput,
 }) => {
+  const onReadKey = (e) => {
+    if (!/[0-9]/.test(e.key)) {
+      e.preventDefault();
+    }
+  };
   return (
     <div>
       <p className="product-name">{name}</p>
@@ -17,6 +23,13 @@ const AddToCart = ({
         <AiOutlineMinus />
       </button>
       <span className="quantity">{amount}</span>
+      <input
+        type="tel"
+        value={amount}
+        className="quantity"
+        onKeyDown={onReadKey}
+        onChange={(e) => onAmountInput(id, e)}
+      />
       <button type="button" onClick={() => onAdd(id)}>
         <AiOutlinePlus />
       </button>

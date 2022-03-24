@@ -33,6 +33,17 @@ const Shop = ({ onAddToCart }) => {
     setProducts(data);
   }, []);
 
+  const onAmountInput = (itemID, e) => {
+    setProducts(
+      products.map((prod) => {
+        if (prod.id === itemID) {
+          prod.amount = e.currentTarget.value;
+          return prod;
+        } else return prod;
+      })
+    );
+  };
+
   const onAdd = (itemID) => {
     setProducts(
       products.map((prod) => {
@@ -68,6 +79,7 @@ const Shop = ({ onAddToCart }) => {
           onAdd={onAdd}
           onLessen={onLessen}
           onAddToCart={onAddToCart}
+          onAmountInput={onAmountInput}
         />
       ))}
     </div>

@@ -9,6 +9,7 @@ const ProductCard = ({
   onAdd,
   onLessen,
   onAddToCart,
+  onAmountInput,
 }) => {
   return (
     <div className="product-card">
@@ -21,6 +22,7 @@ const ProductCard = ({
         onAdd={onAdd}
         onLessen={onLessen}
         onAddToCart={onAddToCart}
+        onAmountInput={onAmountInput}
       />
     </div>
   );
