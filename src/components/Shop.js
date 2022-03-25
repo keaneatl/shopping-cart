@@ -16,13 +16,13 @@ import printer1 from "../assets/images/printer1.png";
 const Shop = ({ onAddToCart }) => {
   const [products, setProducts] = useState([]);
   const productImages = [
-    earphones,
+    phone1,
     headset1,
-    headset2,
     laptop1,
     laptop2,
+    earphones,
+    headset2,
     laptop3,
-    phone1,
     phone2,
     phone3,
     printer1,
@@ -32,12 +32,13 @@ const Shop = ({ onAddToCart }) => {
     const data = Object.values(Products);
     setProducts(data);
   }, []);
-
   const onAmountInput = (itemID, e) => {
     setProducts(
       products.map((prod) => {
         if (prod.id === itemID) {
-          prod.amount = e.currentTarget.value;
+          if (Number(e.currentTarget.value))
+            prod.amount = Number(e.currentTarget.value);
+          else prod.amount = e.currentTarget.value;
           return prod;
         } else return prod;
       })
@@ -67,13 +68,10 @@ const Shop = ({ onAddToCart }) => {
   };
 
   return (
-    <div className="products">
+    <div className="shop">
       {products.map((product, i) => (
         <ProductCard
-          name={product.name}
-          price={product.price}
-          amount={product.amount}
-          id={product.id}
+          item={product}
           productImg={productImages[i]}
           key={product.id}
           onAdd={onAdd}

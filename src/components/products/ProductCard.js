@@ -1,10 +1,7 @@
 import AddToCart from "./AddToCart";
 
 const ProductCard = ({
-  name,
-  price,
-  amount,
-  id,
+  item,
   productImg,
   onAdd,
   onLessen,
@@ -13,12 +10,11 @@ const ProductCard = ({
 }) => {
   return (
     <div className="product-card">
-      <img src={productImg} className="product-img" alt={name} />
+      <img src={productImg} className="product-img" alt={item.name} />
+      <p className="product-name">{item.name}</p>
+      <p className="product-price">${item.price}</p>
       <AddToCart
-        name={name}
-        price={price}
-        amount={amount}
-        id={id}
+        item={item}
         onAdd={onAdd}
         onLessen={onLessen}
         onAddToCart={onAddToCart}
