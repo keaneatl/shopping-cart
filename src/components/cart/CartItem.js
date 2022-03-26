@@ -1,4 +1,4 @@
-const CartItem = ({ name, image, amount }) => {
+const CartItem = ({ name, image, amount, id, onDelete }) => {
   return (
     <div className="cart-item">
       <img src={image} className="thumbnail" alt={`${name} thumbnail`} />
@@ -7,7 +7,9 @@ const CartItem = ({ name, image, amount }) => {
         <b>{"  x"}</b>
         {amount}
       </span>
-      <span className="remove-item">remove</span>
+      <span className="remove-item" onClick={() => onDelete(id)}>
+        remove
+      </span>
     </div>
   );
 };

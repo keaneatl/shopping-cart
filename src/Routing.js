@@ -15,14 +15,19 @@ const Routing = () => {
       return;
     } else setCart((items) => [...items, item]);
   };
-
+  const onDelete = (id) => {
+    setCart(cart.filter((item) => item.id !== id));
+  };
   return (
     <BrowserRouter>
       <Header logo="KTECH" cartStatus={cart.length} />
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/shop" element={<Shop onAddToCart={onAddToCart} />} />
-        <Route path="/cart" element={<Cart cart={cart} />} />
+        <Route
+          path="/cart"
+          element={<Cart cart={cart} onDelete={onDelete} />}
+        />
       </Routes>
     </BrowserRouter>
   );

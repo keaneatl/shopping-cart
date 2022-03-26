@@ -11,7 +11,7 @@ import phone2 from "../../assets/images/phone2.png";
 import phone3 from "../../assets/images/phone3.png";
 import printer1 from "../../assets/images/printer1.png";
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart, onDelete }) => {
   const productImages = [
     phone1,
     headset1,
@@ -24,6 +24,7 @@ const Cart = ({ cart }) => {
     phone3,
     printer1,
   ];
+
   return (
     <div className="cart">
       <h1>Cart</h1>
@@ -34,7 +35,9 @@ const Cart = ({ cart }) => {
                 name={item.name}
                 amount={item.amount}
                 image={productImages[item.thumbnailID]}
+                id={item.id}
                 key={item.id}
+                onDelete={onDelete}
               />
             );
           })
