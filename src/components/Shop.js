@@ -30,8 +30,10 @@ const Shop = ({ onAddToCart }) => {
 
   useEffect(() => {
     const data = Object.values(Products);
+    data.forEach((item, i) => (item.thumbnailID = i));
     setProducts(data);
   }, []);
+
   const onAmountInput = (itemID, e) => {
     setProducts(
       products.map((prod) => {

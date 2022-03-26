@@ -20,7 +20,10 @@ const Header = ({ logo, cartStatus }) => {
       <div className="right-nav">
         <CgProfile className="ico" size={25} />
         <CgHeart className="ico" size={25} />
-        <CgShoppingCart className="ico" size={25} />
+        <Link to="/cart" style={{ textDecoration: "none", color: "black" }}>
+          <CgShoppingCart className="ico" size={25} />
+        </Link>
+
         <span>({cartStatus})</span>
       </div>
     </div>
