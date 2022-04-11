@@ -1,8 +1,7 @@
-import { CgHeart, CgShoppingCart, CgProfile } from "react-icons/cg";
+import { CgShoppingCart } from "react-icons/cg";
 import { Link } from "react-router-dom";
 
 const Header = ({ logo, cartStatus }) => {
-  // Continue Here: Make Cart Status and AddTOCart function
   return (
     <div className="header">
       <div className="logo">
