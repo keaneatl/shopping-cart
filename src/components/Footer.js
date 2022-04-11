@@ -4,9 +4,9 @@ const Footer = () => {
   return (
     <footer>
       <a
-        href="github.com/keaneatl/shopping-cart"
+        href="https://github.com/keaneatl/shopping-cart"
         target="_blank"
-        rel="noopener"
+        rel="noopener noreferrer"
       >
         <FaGithub /> Made by Keane Andre
       </a>
