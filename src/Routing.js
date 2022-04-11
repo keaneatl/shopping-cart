@@ -22,10 +22,13 @@ const Routing = () => {
     <BrowserRouter>
       <Header logo="KTECH" cartStatus={cart.length} />
       <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/shop" element={<Shop onAddToCart={onAddToCart} />} />
+        <Route path="/shopping-cart" element={<App />} />
         <Route
-          path="/cart"
+          path="/shopping-cart/shop"
+          element={<Shop onAddToCart={onAddToCart} />}
+        />
+        <Route
+          path="/shopping-cart/cart"
           element={<Cart cart={cart} onDelete={onDelete} />}
         />
       </Routes>
