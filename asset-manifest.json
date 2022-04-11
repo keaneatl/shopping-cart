@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.9b1924bd.css",
+    "main.js": "/shopping-cart/static/js/main.ca7610c4.js",
+    "static/js/787.d6fe38e8.chunk.js": "/shopping-cart/static/js/787.d6fe38e8.chunk.js",
+    "static/media/earphones.png": "/shopping-cart/static/media/earphones.a36387390d79dea58f94.png",
+    "static/media/laptop2.png": "/shopping-cart/static/media/laptop2.188f68f95eb9c1a85c03.png",
+    "static/media/phone2.png": "/shopping-cart/static/media/phone2.f04db387fc6175568e47.png",
+    "static/media/laptop1.png": "/shopping-cart/static/media/laptop1.63752f8b206b49271df0.png",
+    "static/media/headset1.png": "/shopping-cart/static/media/headset1.a76e97233cc0021e8c8b.png",
+    "static/media/laptop3.png": "/shopping-cart/static/media/laptop3.9e608f7c55606c340b81.png",
+    "static/media/cormorant.regular.otf": "/shopping-cart/static/media/cormorant.regular.4e8f9e2cc66e5b4473ee.otf",
+    "static/media/headset2.png": "/shopping-cart/static/media/headset2.ddf49579be8489cd37a6.png",
+    "static/media/phone3.png": "/shopping-cart/static/media/phone3.22b4977504cf35d5bbbc.png",
+    "static/media/printer1.png": "/shopping-cart/static/media/printer1.1596f56efa61dc9a8258.png",
+    "static/media/about.jpeg": "/shopping-cart/static/media/about.5f8d81cba2846d905f45.jpeg",
+    "static/media/phone1.png": "/shopping-cart/static/media/phone1.3aabc2b5dea3086f4a48.png",
+    "index.html": "/shopping-cart/index.html",
+    "main.9b1924bd.css.map": "/shopping-cart/static/css/main.9b1924bd.css.map",
+    "main.ca7610c4.js.map": "/shopping-cart/static/js/main.ca7610c4.js.map",
+    "787.d6fe38e8.chunk.js.map": "/shopping-cart/static/js/787.d6fe38e8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b1924bd.css",
+    "static/js/main.ca7610c4.js"
+  ]
+}
